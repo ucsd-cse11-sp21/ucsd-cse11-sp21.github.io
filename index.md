@@ -77,10 +77,24 @@ You can visit the lectures via zoom links provided in Canvas.
 Discussion sections will be used to demo tools and answer questions about the
 programming assignment specifications. They will be recorded and released, also
 have similar discussion prompts and breakout groups to work on problems.
-Attendance is encouraged but optional. The discussions are (in the time zone of
-San Diego) from 4-4:50pm. Zoom links for the discussion sections will be posted
-in the resources provided in the schedule spreadsheet below
+Attendance is encouraged but optional. 
 
+The discussions times are listed below (in the time zone of San Diego). 
+Zoom links for the discussion sections will be posted in Canvas.
+
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Section</th><th>Time</th><th>Location</th>
+  </tr>
+</thead>
+<tr>
+  <td>A00 </td><td>W 4pm - 4:50pm </td><td>Zoom</td>
+</tr>
+<tr>
+  <td>B00 </td><td>W 5pm - 5:50pm </td><td>Zoom</td>
+</tr>
+</table>
 
 <a id="b:disc"></a>
 <h3>Schedule</h3>
