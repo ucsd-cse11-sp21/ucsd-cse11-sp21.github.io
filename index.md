@@ -343,12 +343,11 @@ You should be familiar with [the UCSD
 guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
 on academic integrity as well.
 
-### Late Work
+### Late and Missed Work
 
-In general, late work is not accepted. However, most of the categories of
-submission for the course allow some missed submissions without having a
-large impact on your grade, and you only have to submit a subset of them for
-full credit.
+There will be opportunities to regain some (not necessarily all) lost credit on programming assignments if you submit something incomplete or miss the deadline, by resubmitting later with fixes. The details of this process will be described along with the grades for the first programming assignment.
+
+No late work will be accepted for the programming exams. However, the combined grading policy for the exams will allow some flexibility in the event that you cannot complete one of them. 
 
 ### Regrades
 
