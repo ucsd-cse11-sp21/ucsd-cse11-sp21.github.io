@@ -129,6 +129,8 @@ place to go for programming help. At the times below, the course staff will be
 available to answer your questions, and it's a great place to get debugging
 help, since you'll be able to 1-on-1 screenshare with a tutor.
 
+Expect to have about 5 minutes with a tutor or TA: you probably won’t have the solution at the end of the conversation, but you should feel un-stuck and ready to try new approaches.
+
 You can see instructions for how we're setting this up for remote access here:
 
 [Remote Lab Hours How-To](https://drive.google.com/file/d/15D8Z3re9gYDfcIGQSX7r7fc0LZBzY9cA/view?usp=sharing)
