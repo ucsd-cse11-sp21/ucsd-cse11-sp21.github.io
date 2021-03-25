@@ -53,8 +53,8 @@ Monday, Wednesday or Friday at the start of the first originally-scheduled lectu
 quizzes are required work to demonstrate your consistent engagement with the
 material. 
 
-The scheduled lecture times are listed below (in the time zone of San Diego). 
-You can visit the lectures via zoom links provided in Canvas.
+The lecture times are listed below (in the time zone of San Diego). 
+Zoom links for the lectures will be posted in Canvas.
 
 <table class="table table-striped">
 <thead>
