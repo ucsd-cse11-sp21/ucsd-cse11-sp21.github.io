@@ -89,10 +89,10 @@ Zoom links for the discussion sections will be posted in Canvas.
   </tr>
 </thead>
 <tr>
-  <td>A00 </td><td>W 4pm - 4:50pm </td><td>Zoom</td>
+  <td>A01 </td><td>W 4pm - 4:50pm </td><td>Zoom</td>
 </tr>
 <tr>
-  <td>B00 </td><td>W 5pm - 5:50pm </td><td>Zoom</td>
+  <td>B01 </td><td>W 5pm - 5:50pm </td><td>Zoom</td>
 </tr>
 </table>
 
