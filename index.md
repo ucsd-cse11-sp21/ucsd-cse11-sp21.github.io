@@ -45,7 +45,7 @@ and discuss more efficient strategies in office hours.
 
 <h3>Lecture</h3>
 
-Most lecture content will be presented through lecture and readings. All lectures will be recorded.  Attendance is encouraged but
+Lecture content will be presented through live lecture and readings. All lectures will be recorded.  Attendance is encouraged but
 not required. 
 
 These will come with associated quizzes that are due on the following
