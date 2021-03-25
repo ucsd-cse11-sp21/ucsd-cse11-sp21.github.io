@@ -100,20 +100,16 @@ Zoom links for the discussion sections will be posted in Canvas.
 <h3>Schedule</h3>
 
 The schedule below outlines topics, due dates, and links to assignments. In a
-typical week, by 5pm Monday before class all due dates, readings, and notable
+typical week, by 5pm Sunday before class all due dates, readings, and notable
 events in the course until the following week will be posted here. So if you
 check the schedule at the beginning of the week, you'll know when all reading
 quizzes, programming assignments, etc. will be due. We will often have the
 schedule confirmed more than a week out, but we'll strive to be up to date with
 the current week.
 
-<iframe style="border: none; border-top: 1px solid grey; border-spacing: 2px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-GrEMl81YfrS7alVNIZSo6b7embAWj7wcIxW68xwz4oQTZiz5kEMCLesS4OIO6rTVWAfrX0vyQ51C/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="800px"></iframe>
-
 <iframe style="border: none; border-top: 1px solid grey; border-spacing: 2px"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRIdv8e-aMmNvjTiuDD_gQc-SDbvJFLvkqpqCpNjUOfdWA3uIxHCcVmJSncgmznlvOG7slccz3v-vD5/pubhtml?gid=594704517&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="800px"></iframe>
 
 <a id="schedule"></a>
-
-
 
 <a id="staff"></a>
 ## Staff & Resources
@@ -124,25 +120,8 @@ the current week.
 <a target="_blank" href="https://gregmiranda.com">Greg Miranda</a> (Instructor)
 </p>
 
-There are 12 staff members(instructor, TAs, and tutors) to help with your learning, and a few kinds of help sessions
+There are 14 staff members (instructor, TAs, and tutors) to help with your learning, and a few kinds of help sessions
 you can attend. 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSHcR4l04Pfe8mEBjKeNC_zlCtu7bVwN0uJuJxqlNHjpGWLZFFepkILjeG6xqDrlFJsvcWnJ8Ru3gYn/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="500px"></iframe>
-
-
-The first is **group help hours** at the times listed below. Group help hours
-are a great place for any kind of question about the course, from help with
-your assignment to clarifications about material in lecture to questions beyond
-what we cover in the course. Group help hours is **not** a good place to get
-help with your specific debugging challenges with your code, since we'll
-usually be reluctant to share one students' code with a whole group, as that
-could rob the rest of the group of some productive struggle and learning.
-
-<iframe
-src="https://calendar.google.com/calendar/embed?src=ucsd.edu_7t0ttaf778binv3hrkg0h3hom0%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-style="border: 0" width="800" height="600" frameborder="0"
-scrolling="no"></iframe>
-
-
 
 The second is **1-on-1 help hours** where TAs and tutors are available to
 answer your questions about any course content, though often this is a good
