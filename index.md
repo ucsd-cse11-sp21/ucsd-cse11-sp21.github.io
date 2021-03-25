@@ -239,16 +239,9 @@ You need to get credit for 80% (ex: 29 out of 36 total) quizzes, surveys, or tas
 Most weeks there will be a programming assignment. Direct practice with
 programming will make up the majority of your work in the course.
 
-On each submission, you will get a grade which partially comes from an
-automatic grade based on the correctness of your code (a small part of your
-grade) and some manually-written **feedback** from the course staff (the larger
-portion). If you don't complete the assignment because you didn't attempt some
-of the parts, you'll miss out on most of the credit. However, if you make a
-clear effort at all the parts, we will give you **feedback tasks** as part of
-your grade report. After you get your grade, you'll follow up with a new
-submission that addresses the feedback tasks and your grade will be based on
-how well you responded. A more correct and thorough initial submission will
-usually have a much smaller set of feedback tasks.
+Each programming assignment will have a portion that is automatically graded, and a portion that is manually graded by the course staff.
+
+After each assignment's deadline, we will open a resubmission for that assignment for two weeks (this time period may be shorter for assignments near the end of the quarter). You can resubmit to improve your grade. The details of this process will be described along with the grades for the first programming assignment.
 
 There are 10 PAs total, and their relative weightings that add up to 50% are:
 
@@ -262,9 +255,6 @@ There are 10 PAs total, and their relative weightings that add up to 50% are:
 - PA7: 8%
 - PA8: 5%
 - PA9: 5%
-
-After you get your grade back on each you have some time to improve your
-grade via feedback tasks and resubmitting any automatically-graded component.
 
 <a id="g:exams"></a>
 <h3>Exams</h3>
