@@ -20,7 +20,7 @@ In this course, you will learn to write, trace, and test programs; explore the
 interactions between programs and data; and practice organizing programs for
 clarity and re-use.
 
-We will explore these topics interactively in lecure, you will implement
+We will explore these topics interactively in lecture, you will implement
 programs to practice your programming skills, and you will reflect on this
 learning through your own program designs.
 
