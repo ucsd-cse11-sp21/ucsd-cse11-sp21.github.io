@@ -123,7 +123,7 @@ the current week.
 There are 14 staff members (instructor, TAs, and tutors) to help with your learning, and a few kinds of help sessions
 you can attend. 
 
-The second is **1-on-1 help hours** where TAs and tutors are available to
+The first is **1-on-1 help hours** where TAs and tutors are available to
 answer your questions about any course content, though often this is a good
 place to go for programming help. At the times below, the course staff will be
 available to answer your questions, and it's a great place to get debugging
@@ -131,13 +131,14 @@ help, since you'll be able to 1-on-1 screenshare with a tutor.
 
 You can see instructions for how we're setting this up for remote access here:
 
-[Remote Lab Hours How-To](https://docs.google.com/document/d/1DEDMHBSDrUieqXjZ5K0Hj_h0LhtK3Iis2HSTjeMckpA/edit)
+[Remote Lab Hours How-To](https://drive.google.com/file/d/15D8Z3re9gYDfcIGQSX7r7fc0LZBzY9cA/view?usp=sharing)
 
 These rules help us make sure we get timely and actionable help to as many
 students as possible. They also encourage students to do some meaningful work
 on their own before reaching out for help – the goal of the course is for you
 to be able to do programming work on your own!
-<iframe src="https://calendar.google.com/calendar/embed?src=ucsd.edu_1sqq70f2o1tt4q5g6efmlaqurg%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+<iframe src="https://calendar.google.com/calendar/embed?src=c_kulptphaqshnppicbrk3v0rhl8%40group.calendar.google.com&ctz=America%2FLos_Angeles&amp;src=Y18wcmxsaW8yOTgzcnZyazIzbDZvNDJrOTlpc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;color=%230B8043&amp;mode=WEEK&amp;showTz=1&amp;showCalendars=0&amp;showPrint=0&amp;showNav=1&amp;showTabs=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 The third is through **Piazza**.
 
