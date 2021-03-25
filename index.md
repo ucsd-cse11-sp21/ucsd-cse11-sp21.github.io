@@ -230,8 +230,7 @@ next lecture section with at least half of the answers correct gains engagement
 credit. You can also get engagement credit by submitting various surveys and
 other small engagement tasks we may ask of you throughout the quarter.
 
-You need to get credit for 14 (out of 20 total) quizzes for full engagement
-credit.
+You need to get credit for 80% (ex: 29 out of 36 total) quizzes, surveys, or tasks for full engagement credit.
 
 <a id="p:programming"></a>
 <h3>Programming</h3>
