@@ -45,22 +45,30 @@ and discuss more efficient strategies in office hours.
 
 <h3>Lecture</h3>
 
-Most lecture content will be presented asynchronously through videos and
-readings. These will come with associated quizzes that are due on the following
-Tuesday or Thursday at the start of our originally-scheduled lecture time. The
+Most lecture content will be presented through lecture and readings. All lectures will be recorded.  Attendance is encouraged but
+not required. 
+
+These will come with associated quizzes that are due on the following
+Monday, Wednesday or Friday at the start of the first originally-scheduled lecture time. The
 quizzes are required work to demonstrate your consistent engagement with the
-material.
+material. 
 
-In our originally-scheduled lecture time, we will play the videos with an
-opportunity for live questions, clarifications, and some prompts for you to
-work on beyond the assigned reading and videos. Attendance is encouraged but
-not required. Recordings of relevant classwide discussions will be posted after
-the meetings, though the selected videos/reading for the given day are the
-official “lecture” for that day.
+The scheduled lecture times are listed below (in the time zone of San Diego). 
+You can visit the lectures via zoom links provided in Canvas.
 
-The scheduled lecture time is (in the time zone of San Diego) Tuesday and
-Thursday from 11am-12:20pm. You can visit the lectures via zoom links provided
-with each of the lecture links in the schedule spreadsheet below.
+<table class="table table-striped">
+<thead>
+  <tr>
+    <th>Section</th><th>Time</th><th>Location</th>
+  </tr>
+</thead>
+<tr>
+  <td>A00 </td><td>MWF 8am - 8:50am </td><td>Zoom</td>
+</tr>
+<tr>
+  <td>B00 </td><td>MWF 9am - 9:50am </td><td>Zoom</td>
+</tr>
+</table>
 
 
 <a id="b:disc"></a>
