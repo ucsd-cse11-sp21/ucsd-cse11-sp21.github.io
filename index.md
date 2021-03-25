@@ -103,7 +103,7 @@ Zoom links for the discussion sections will be posted in Canvas.
 The schedule below outlines topics, due dates, and links to assignments. In a
 typical week, by 5pm Sunday before class all due dates, readings, and notable
 events in the course until the following week will be posted here. So if you
-check the schedule at the beginning of the week, you'll know when all reading
+check the schedule at the beginning of the week, you'll know when all 
 quizzes, programming assignments, etc. will be due. We will often have the
 schedule confirmed more than a week out, but we'll strive to be up to date with
 the current week.
