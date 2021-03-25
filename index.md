@@ -140,7 +140,7 @@ to be able to do programming work on your own!
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_kulptphaqshnppicbrk3v0rhl8%40group.calendar.google.com&ctz=America%2FLos_Angeles&amp;src=Y18wcmxsaW8yOTgzcnZyazIzbDZvNDJrOTlpc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;color=%230B8043&amp;mode=WEEK&amp;showTz=1&amp;showCalendars=0&amp;showPrint=0&amp;showNav=1&amp;showTabs=1" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
-The third is through **Piazza**.
+The second is through **Piazza**.
 
 Piazza is an online discussion board where we can make announcements and
 students can ask questions. Both we (the course staff) and your classmates can
@@ -177,15 +177,12 @@ There are three components to your grade in the course:
 - 20% Engagement (surveys, lecture quizzes, etc)
 - 50% Programming Assignments (weekly)
 - 30% Exams (Code + video), 2 midterms + final
-  - Best exam performance counts for ~~15%~~ 17%
-  - Middle exam counts for ~~10%~~ 12%
-  - Lowest exam counts for ~~5%~~ 1%
+  - Best exam performance counts for 15%
+  - Middle exam counts for 10%
+  - Lowest exam counts for 5%
   - To pass the course, you must either pass:
     - Both midterms, or
     - The final exam
-
-    (This policy changed to be slightly more lenient, allowing the final exam
-    to be sufficient even if both midterms were failed.)
 
 Your final letter grade will correspond to the following table:
 
