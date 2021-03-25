@@ -32,8 +32,9 @@ course, as well as the syllabus.
 
 ## Basics
 
-- Q&A Forum: Piazza [https://piazza.com/ucsd/spring2020/cse11/](https://piazza.com/ucsd/spring2020/cse11/)
+- Q&A Forum: Piazza [https://piazza.com/eng.ucsd/spring2021/cse11/](https://piazza.com/eng.ucsd/spring2021/cse11/)
 - Gradescope: [https://www.gradescope.com](https://www.gradescope.com) [an invitation will be sent in the first week]
+- Autograder: [https://autograder.ucsd.edu/](https://autograder.ucsd.edu/)
 
 On an average week in CSE11, you can expect to spend 4-6 hours on videos,
 reading, lecture, and discussion; 2-3 hours on programming practice; and 4-6
