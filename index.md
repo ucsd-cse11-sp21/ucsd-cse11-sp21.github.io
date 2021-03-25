@@ -6,7 +6,7 @@ doodle: "/doodle.png"
 
 # Accelerated Intro to Programming (UCSD CSE 11)
 
-<a href="https://jpolitz.github.io">Joe Gibbs Politz</a> (Instructor)
+<a target="_blank" href="https://gregmiranda.com">Greg Miranda</a> (Instructor)
 
 <p>
 <a href="#basics">Basics</a> -
@@ -99,7 +99,7 @@ the current week.
 ### Staff
 <a id="staff"></a>
 <p>
-<a href="https://jpolitz.github.io" target="">Prof Joe Gibbs Politz</a> (Instructor)
+<a target="_blank" href="https://gregmiranda.com">Greg Miranda</a> (Instructor)
 </p>
 
 There are 12 staff members(instructor, TAs, and tutors) to help with your learning, and a few kinds of help sessions
