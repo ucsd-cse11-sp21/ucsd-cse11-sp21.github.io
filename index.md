@@ -50,7 +50,7 @@ Lecture content will be presented through live lecture and readings. All lecture
 not required. 
 
 These will come with associated quizzes that are due on the following
-Monday, Wednesday or Friday at the start of the first originally-scheduled lecture time. The
+Monday, Wednesday or Friday at the start of the first originally-scheduled lecture time (8am San Diego time). The
 quizzes are required work to demonstrate your consistent engagement with the
 material. 
 
