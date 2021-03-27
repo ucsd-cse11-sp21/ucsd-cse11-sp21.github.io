@@ -50,7 +50,7 @@ Lecture content will be presented through live lecture and readings. All lecture
 not required. 
 
 These will come with associated quizzes that are due on the following
-Monday, Wednesday or Friday at the start of the first originally-scheduled lecture time. The
+Monday, Wednesday or Friday at the start of the first originally-scheduled lecture time (8am San Diego time). The
 quizzes are required work to demonstrate your consistent engagement with the
 material. 
 
@@ -221,7 +221,7 @@ scale for individual students.
 <h3>Engagement</h3>
 
 Each lecture will come with an associated quiz. Completing the quiz before the
-next lecture section with at least half of the answers correct gains engagement
+next lecture section (8am San Diego time) with at least half of the answers correct gains engagement
 credit. You can also get engagement credit by submitting various surveys and
 other small engagement tasks we may ask of you throughout the quarter.
 
