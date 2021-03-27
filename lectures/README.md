@@ -1,1 +1,1 @@
-Pre-lectures and live lectures.
+Lectures
