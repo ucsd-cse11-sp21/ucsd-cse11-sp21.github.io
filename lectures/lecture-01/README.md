@@ -8,4 +8,4 @@ TBD
 
 Reminder to check the course web site for other deadlines:
 
-https://ucsd-cse11-s20.github.io/
+https://ucsd-cse11-sp21.github.io/
