@@ -1,3 +1,4 @@
 class Examples1Lecture {
-  int theNumberFive = 2 + 3;
+  int x = (2 + 9) * 3;
+  int y = 11 / 3;
 }
