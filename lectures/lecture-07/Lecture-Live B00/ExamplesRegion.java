@@ -1,3 +1,4 @@
+/*
 class Point {
     int x;
     int y;
@@ -30,3 +31,4 @@ class ExamplesRegion {
     Point circleTest1 = new Point(209, 50);
     boolean contains1 = this.c1.contains(this.circleTest1);
 }
+*/
