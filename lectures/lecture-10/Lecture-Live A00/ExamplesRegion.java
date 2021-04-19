@@ -66,11 +66,8 @@ class CircleRegion implements Region {
 class ExamplesRegion {
   Region circ = new CircleRegion(new Point(10, 5), 4);
   Region square = new SquareRegion(new Point(5, 6), 8);
-  double num = circ.radius;
-}
-
-
+  //double num = circ.radius;
   //boolean contains1 = circ.contains(new Point(7, 6));
-
-  //UnionRegion ur = new UnionRegion(this.square, this.circ);
-  //boolean b1 = this.ur.contains(new Point(13, 5));
+  UnionRegion ur = new UnionRegion(this.square, this.circ);
+  boolean b1 = this.ur.contains(new Point(13, 5));
+}
