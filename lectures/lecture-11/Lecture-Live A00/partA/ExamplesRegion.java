@@ -36,6 +36,12 @@ class UnionRegion {
   public boolean contains(Point p) {
     return this.r1.contains(p) || this.r2.contains(p);
   }
+/*
+  public boolean contains(Point p) {
+    return true;
+  }
+*/
+
 }
 
 class SquareRegion implements Region {
@@ -49,6 +55,12 @@ class SquareRegion implements Region {
     return this.center.xDistance(toCheck) <= (this.sideLength/ 2) &&
            this.center.yDistance(toCheck) <= (this.sideLength / 2);
   }
+/*
+  public boolean contains(Point toCheck) {
+    return false &&
+           this.center.yDistance(toCheck) <= (this.sideLength / 2);
+  }
+*/
 }
 
 class CircleRegion implements Region {
@@ -61,6 +73,12 @@ class CircleRegion implements Region {
   public boolean contains(Point toCheck) {
     return this.center.distance(toCheck) <= this.radius;
   }
+/*
+  public boolean contains(Point toCheck) {
+    return true;
+  }
+*/
+
 }
 
 class ExamplesRegion {
@@ -68,4 +86,5 @@ class ExamplesRegion {
   Region square = new SquareRegion(new Point(5, 6), 8);
   UnionRegion ur = new UnionRegion(this.square, this.circ);
   boolean b1 = this.ur.contains(new Point(13, 5));
+  //boolean b1 = true;
 }

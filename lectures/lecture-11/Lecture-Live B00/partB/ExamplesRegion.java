@@ -1,5 +1,4 @@
 import tester.*;
-
 class Point {
   int x;
   int y;
@@ -18,7 +17,11 @@ class Point {
   }
 }
 
-class RectRegion {
+interface Region {
+  boolean contains(Point p);
+}
+
+class RectRegion implements Region {
   Point lowerLeft;
   Point upperRight;
   RectRegion(Point lowerLeft, Point upperRight) {
@@ -35,7 +38,7 @@ class RectRegion {
   }
 }
 
-class CircRegion {
+class CircRegion implements Region {
   Point center;
   int radius;
   CircRegion(Point center, int radius) {
@@ -51,7 +54,7 @@ class CircRegion {
   }
 }
 
-class UnionRegion {
+class UnionRegion implements Region {
   Region r1, r2;
   UnionRegion(Region r1, Region r2) {
     this.r1 = r1;
@@ -63,11 +66,11 @@ class UnionRegion {
 }
 
 class ExamplesRegion {
-  RectRegion r1 = new RectRegion(new Point(30, 40), new Point(100, 200));
-  RectRegion r2 = new RectRegion(new Point(10, 10), new Point(50, 50));
+  Region r1 = new RectRegion(new Point(30, 40), new Point(100, 200));
+  Region r2 = new RectRegion(new Point(10, 10), new Point(50, 50));
   Point p1 = new Point(10, 10);
   Point p2 = new Point(50, 50);
-  RectRegion r3 = new RectRegion(p1, p2);
+  Region r3 = new RectRegion(p1, p2);
 
   Point toTest1 = new Point(60, 60);
   Point toTest2 = new Point(20, 20);
@@ -81,8 +84,8 @@ class ExamplesRegion {
            t.checkExpect(this.r3.contains(this.toTest2), true);
   }
 
-  CircRegion c1 = new CircRegion(new Point(200, 50), 10);
-  CircRegion c2 = new CircRegion(new Point(20, 300), 25);
+  Region c1 = new CircRegion(new Point(200, 50), 10);
+  Region c2 = new CircRegion(new Point(20, 300), 25);
 
   Point circleTest1 = new Point(209, 50);
   Point circleTest2 = new Point(20, 315);
@@ -93,4 +96,26 @@ class ExamplesRegion {
            t.checkExpect(this.c2.contains(this.circleTest1), false) &&
            t.checkExpect(this.c2.contains(this.circleTest2), true);
   }
+
+
+  Region u1 = new UnionRegion(this.c1, this.r1);
+
+  // This is another style of tester method – we write each checkExpect on its
+  // own line and then return true at the end.
+  boolean testContainsRegion(Tester t) {
+    // These first two we know should work because they were in the original
+    // tests for the shapes we composed into Region u1
+    t.checkExpect(this.u1.contains(this.circleTest1), true);
+    t.checkExpect(this.u1.contains(this.toTest1), true);
+
+    // To the left of the rectangle and the circle
+    t.checkExpect(this.u1.contains(this.circleTest2), false);
+
+    // To the right and above
+    t.checkExpect(this.u1.contains(new Point(1000, 1000)), false);
+
+    return true;
+  }
 }
+
+
