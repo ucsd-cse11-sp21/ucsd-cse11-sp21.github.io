@@ -94,4 +94,9 @@ class ExamplesARegion {
   Region circ1 = new CircleRegion(new Point(10, 5), 4.0);
   Region sq = new SquareRegion(new Point(10, 1), 8.);
   Region ur = this.circ1.add(this.sq);
+
+  // To find add method() for this.circ1.add:
+  // - First lookin in CircleRegion
+  // - Not found! So look iin ARegion, because CircleRegion extends it
+  
 }

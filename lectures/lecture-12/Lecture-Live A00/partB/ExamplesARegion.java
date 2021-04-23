@@ -18,6 +18,11 @@ interface Region {
 }
 
 abstract class ARegion implements Region {
+
+  //Default no-arg constructor created if one is not provided
+  //ARegion() {
+  //}
+
   public Region add(Region other) {
     return new UnionRegion(this, other);
   }
@@ -26,12 +31,20 @@ abstract class ARegion implements Region {
   }
 }
 
-class UnionRegion extends ARegion {
+abstract class ACombboRegion extends ARegion {
   Region r1;
   Region r2;
-  UnionRegion(Region r1, Region r2) {
+  ACombboRegion(Region r1, Region r2) {
+    //By default, will call the no-arg constructor of the super class
+    //super();
     this.r1 = r1;
     this.r2 = r2;
+  }
+}
+
+class UnionRegion extends ACombboRegion {
+  UnionRegion(Region r1, Region r2) {
+    super(r1, r2);
   }
   public boolean contains(Point toCheck) {
     return this.r1.contains(toCheck) || 
@@ -39,12 +52,9 @@ class UnionRegion extends ARegion {
   }
 }
 
-class IntersectRegion extends ARegion {
-  Region r1;
-  Region r2;
+class IntersectRegion extends ACombboRegion {
   IntersectRegion(Region r1, Region r2) {
-    this.r1 = r1;
-    this.r2 = r2;
+    super(r1, r2);
   }
   public boolean contains(Point toCheck) {
     return this.r1.contains(toCheck) && 
@@ -52,12 +62,9 @@ class IntersectRegion extends ARegion {
   }
 }
 
-class SubtractRegion implements Region {
-  Region r1;
-  Region r2;
+class SubtractRegion extends ACombboRegion {
   SubtractRegion(Region r1, Region r2) {
-    this.r1 = r1;
-    this.r2 = r2;
+    super(r1, r2);
   }
   public boolean contains(Point toCheck) {
     return this.r1.contains(toCheck) && 
