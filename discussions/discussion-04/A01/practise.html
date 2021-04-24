@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #49483e }
+body  { background: #272822; color: #f8f8f2 }
+body .c { color: #75715e } /* Comment */
+body .err { color: #960050; background-color: #1e0010 } /* Error */
+body .k { color: #66d9ef } /* Keyword */
+body .l { color: #ae81ff } /* Literal */
+body .n { color: #f8f8f2 } /* Name */
+body .o { color: #f92672 } /* Operator */
+body .p { color: #f8f8f2 } /* Punctuation */
+body .cm { color: #75715e } /* Comment.Multiline */
+body .cp { color: #75715e } /* Comment.Preproc */
+body .c1 { color: #75715e } /* Comment.Single */
+body .cs { color: #75715e } /* Comment.Special */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .kc { color: #66d9ef } /* Keyword.Constant */
+body .kd { color: #66d9ef } /* Keyword.Declaration */
+body .kn { color: #f92672 } /* Keyword.Namespace */
+body .kp { color: #66d9ef } /* Keyword.Pseudo */
+body .kr { color: #66d9ef } /* Keyword.Reserved */
+body .kt { color: #66d9ef } /* Keyword.Type */
+body .ld { color: #e6db74 } /* Literal.Date */
+body .m { color: #ae81ff } /* Literal.Number */
+body .s { color: #e6db74 } /* Literal.String */
+body .na { color: #a6e22e } /* Name.Attribute */
+body .nb { color: #f8f8f2 } /* Name.Builtin */
+body .nc { color: #a6e22e } /* Name.Class */
+body .no { color: #66d9ef } /* Name.Constant */
+body .nd { color: #a6e22e } /* Name.Decorator */
+body .ni { color: #f8f8f2 } /* Name.Entity */
+body .ne { color: #a6e22e } /* Name.Exception */
+body .nf { color: #a6e22e } /* Name.Function */
+body .nl { color: #f8f8f2 } /* Name.Label */
+body .nn { color: #f8f8f2 } /* Name.Namespace */
+body .nx { color: #a6e22e } /* Name.Other */
+body .py { color: #f8f8f2 } /* Name.Property */
+body .nt { color: #f92672 } /* Name.Tag */
+body .nv { color: #f8f8f2 } /* Name.Variable */
+body .ow { color: #f92672 } /* Operator.Word */
+body .w { color: #f8f8f2 } /* Text.Whitespace */
+body .mf { color: #ae81ff } /* Literal.Number.Float */
+body .mh { color: #ae81ff } /* Literal.Number.Hex */
+body .mi { color: #ae81ff } /* Literal.Number.Integer */
+body .mo { color: #ae81ff } /* Literal.Number.Oct */
+body .sb { color: #e6db74 } /* Literal.String.Backtick */
+body .sc { color: #e6db74 } /* Literal.String.Char */
+body .sd { color: #e6db74 } /* Literal.String.Doc */
+body .s2 { color: #e6db74 } /* Literal.String.Double */
+body .se { color: #ae81ff } /* Literal.String.Escape */
+body .sh { color: #e6db74 } /* Literal.String.Heredoc */
+body .si { color: #e6db74 } /* Literal.String.Interpol */
+body .sx { color: #e6db74 } /* Literal.String.Other */
+body .sr { color: #e6db74 } /* Literal.String.Regex */
+body .s1 { color: #e6db74 } /* Literal.String.Single */
+body .ss { color: #e6db74 } /* Literal.String.Symbol */
+body .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+body .vc { color: #f8f8f2 } /* Name.Variable.Class */
+body .vg { color: #f8f8f2 } /* Name.Variable.Global */
+body .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+body .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="background-color: #272822; padding: 0 5px 0 5px">  1</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">tester.*</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  2</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">  3</span> <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  4</span> <span style="color: #75715e">    This interface defines a Volume type that can be converted to Cups, and can</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  5</span> <span style="color: #75715e">    be added to other Volumes.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  6</span> <span style="color: #75715e">*/</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  7</span> <span style="color: #66d9ef">interface</span> <span style="color: #a6e22e">Volume</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  8</span>     <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">  9</span> <span style="color: #75715e">        This method returns the volume of the current object in US Cups.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 10</span> <span style="color: #75715e">    */</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 11</span>     <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">double</span> <span style="color: #a6e22e">toCups</span><span style="color: #f92672">();</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 12</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 13</span>     <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 14</span> <span style="color: #75715e">        This method returns a new Volume which should be the sum of the </span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 15</span> <span style="color: #75715e">        current volume, and the volume of the parameter.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 16</span> <span style="color: #75715e">    */</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 17</span>     <span style="color: #66d9ef">public</span> <span style="color: #f8f8f2">Volume</span> <span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">v</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 18</span> <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 19</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 20</span> <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 21</span> <span style="color: #75715e">    This abstract class provides a common add() method for all</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 22</span> <span style="color: #75715e">    classes implementing Volume by using their toCups() method</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 23</span> <span style="color: #75715e">    to convert all Volumes to the US Cup unit, and returing the</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 24</span> <span style="color: #75715e">    sum of all their results.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 25</span> <span style="color: #75715e">*/</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 26</span> <span style="color: #66d9ef">abstract</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">AVolume</span> <span style="color: #66d9ef">implements</span> <span style="color: #f8f8f2">Volume</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 27</span>     <span style="color: #66d9ef">public</span> <span style="color: #f8f8f2">Volume</span> <span style="color: #a6e22e">add</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">v</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 28</span>         <span style="color: #66d9ef">return</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Cup</span><span style="color: #f92672">(</span><span style="color: #66d9ef">this</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">()</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">v</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">());</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 29</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 30</span> <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 31</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 32</span> <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 33</span> <span style="color: #75715e">    This class represents Volumes measured in US cups.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 34</span> <span style="color: #75715e">*/</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 35</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Cup</span> <span style="color: #66d9ef">extends</span> <span style="color: #f8f8f2">AVolume</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 36</span>     <span style="color: #66d9ef">double</span> <span style="color: #f8f8f2">cups</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 37</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 38</span>     <span style="color: #f8f8f2">Cup</span><span style="color: #f92672">(</span><span style="color: #66d9ef">double</span> <span style="color: #f8f8f2">cups</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 39</span>         <span style="color: #66d9ef">this</span><span style="color: #f92672">.</span><span style="color: #a6e22e">cups</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">cups</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 40</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 41</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 42</span>     <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">double</span> <span style="color: #a6e22e">toCups</span><span style="color: #f92672">()</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 43</span>         <span style="color: #66d9ef">return</span> <span style="color: #66d9ef">this</span><span style="color: #f92672">.</span><span style="color: #a6e22e">cups</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 44</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 45</span> <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 46</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 47</span> <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 48</span> <span style="color: #75715e">    This class represents Volumes measured in US tablespoons.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 49</span> <span style="color: #75715e">*/</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 50</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Tablespoon</span> <span style="color: #66d9ef">extends</span> <span style="color: #f8f8f2">AVolume</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 51</span>     <span style="color: #66d9ef">double</span> <span style="color: #f8f8f2">tbsp</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 52</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 53</span>     <span style="color: #f8f8f2">Tablespoon</span><span style="color: #f92672">(</span><span style="color: #66d9ef">double</span> <span style="color: #f8f8f2">tbsp</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 54</span>         <span style="color: #66d9ef">this</span><span style="color: #f92672">.</span><span style="color: #a6e22e">tbsp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">tbsp</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 55</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 56</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 57</span>     <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">double</span> <span style="color: #a6e22e">toCups</span><span style="color: #f92672">()</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 58</span>         <span style="color: #66d9ef">return</span> <span style="color: #66d9ef">this</span><span style="color: #f92672">.</span><span style="color: #a6e22e">tbsp</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">16.0</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 59</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 60</span> <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 61</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 62</span> <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 63</span> <span style="color: #75715e">    A test class for checking our implementation of the various</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 64</span> <span style="color: #75715e">    classes implementing Volume.</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 65</span> <span style="color: #75715e">*/</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 66</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">ExampleVolumes</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 67</span>     <span style="color: #75715e">// Test cups</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 68</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">oneCup</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Cup</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1.0</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 69</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">twoCups</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Cup</span><span style="color: #f92672">(</span><span style="color: #ae81ff">2.0</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 70</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">threeCups</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">oneCup</span><span style="color: #f92672">.</span><span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">twoCups</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 71</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 72</span>     <span style="color: #75715e">// Test tablespoons</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 73</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">oneTablespoon</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Tablespoon</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1.0</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 74</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">twoTablespoons</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Tablespoon</span><span style="color: #f92672">(</span><span style="color: #ae81ff">2.0</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 75</span>     
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 76</span>     <span style="color: #75715e">/*</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 77</span> <span style="color: #75715e">        Notice that even though we are adding two objects of type </span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 78</span> <span style="color: #75715e">        tablespoons, here our add method implementation only returns</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 79</span> <span style="color: #75715e">        cups, so the result of calling add here returns a Cup object!</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 80</span> <span style="color: #75715e">    */</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 81</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">threeTablespoons</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">oneTablespoon</span><span style="color: #f92672">.</span><span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">twoTablespoons</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 82</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">fourTablespoons</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">twoTablespoons</span><span style="color: #f92672">.</span><span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">twoTablespoons</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 83</span>     
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 84</span>     <span style="color: #75715e">// Test adding cups and tablespoons</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 85</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">fourCups</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">threeCups</span><span style="color: #f92672">.</span><span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">sixteenTablespoons</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 86</span>     <span style="color: #f8f8f2">Volume</span> <span style="color: #f8f8f2">alsoFourCups</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">sixteenTablespoons</span><span style="color: #f92672">.</span><span style="color: #a6e22e">add</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">threeCups</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 87</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 88</span>     <span style="color: #66d9ef">boolean</span> <span style="color: #a6e22e">testCups</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Tester</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 89</span>         <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">oneCup</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 90</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">2.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">twoCups</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 91</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">3.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">threeCups</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">());</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 92</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 93</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 94</span>     <span style="color: #66d9ef">boolean</span> <span style="color: #a6e22e">testTablespoons</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Tester</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 95</span>         <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1.0</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">16.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">oneTablespoon</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 96</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">2.0</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">16.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">twoTablespoons</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 97</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">3.0</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">16.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">threeTablespoons</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 98</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">4.0</span> <span style="color: #f92672">/</span> <span style="color: #ae81ff">16.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">fourTablespoons</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">());</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 99</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">100</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">101</span>     <span style="color: #66d9ef">boolean</span> <span style="color: #a6e22e">testCoversions</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">Tester</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">102</span>         <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">4.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">fourCups</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">103</span>             <span style="color: #f8f8f2">t</span><span style="color: #f92672">.</span><span style="color: #a6e22e">checkExpect</span><span style="color: #f92672">(</span><span style="color: #ae81ff">4.0</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">alsoFourCups</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toCups</span><span style="color: #f92672">())</span> <span style="color: #f92672">&amp;&amp;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">104</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">105</span>     <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">106</span> <span style="color: #f92672">}</span>
+</pre></div>
+</body>
+</html>
