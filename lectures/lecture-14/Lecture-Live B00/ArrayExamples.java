@@ -1,4 +1,4 @@
-import tester.*;
+//import tester.*;
 
 class ArrayExamples {
 
@@ -12,13 +12,13 @@ class ArrayExamples {
     int[] emptyNums = {};
     int[] nums2 = nums;
 
-    boolean testEmpty(Tester t) {
+    /*boolean testEmpty(Tester t) {
         //this.nums[0] = 10;
         //System.out.println(this.nums[0]);
 
         return t.checkExpect(this.isEmpty(nums), false) &&
                t.checkExpect(this.isEmpty(emptyNums), true);
-    }
+    }*/
 
 
 
