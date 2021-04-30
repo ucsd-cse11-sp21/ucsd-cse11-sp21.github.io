@@ -16,10 +16,10 @@ class Point {
     return Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
   }
   double xDistance(Point other) {
-    return Math.abs(this.x = other.x);
+    return Math.abs(this.x - other.x);
   }
   double yDistance(Point other) {
-    return Math.abs(this.y = other.y);
+    return Math.abs(this.y - other.y);
   }
 }
 
