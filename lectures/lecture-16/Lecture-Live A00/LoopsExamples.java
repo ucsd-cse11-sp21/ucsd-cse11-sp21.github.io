@@ -40,4 +40,40 @@ class LoopsExamples {
                t.checkExpect(this.product(nums2), 30);
     }
 
+    //average: take an array of doubles and returns a double
+    //representing the average (mean)
+    double average(double[] doubles) {
+        double total = 0.0;
+        //int count = 0;
+        for (double d: doubles) {
+            total = total + d;
+            //count = count + 1;
+        }
+        //return total / count;
+        return total / doubles.length;
+    }
+
+    double[] ds1 = { 2.0, 4.0, 1.0 };         // 7/3
+    double[] ds2 = { 5.0, 1.0, 3.0, 6.0 };    // 15/4
+
+    boolean testAverage(Tester t) {
+        return t.checkExpect(this.average(ds1), 7.0 / 3.0) &&
+               t.checkExpect(this.average(ds2), 15.0 / 4.0);
+    }
+
+    //write sumEvens: takes an array of ints and
+    //returns the sum of just the even ones
+    //{ 1, 2, 7, 4 } -> 6
+    //{ 4, 2, 4, 5 } -> 10
+    //{ 0, -2, 7, 4, 8 } ->10
+    int sumEvens(int[] arr) {
+        int sum = 0;
+        for (int i: arr) {
+            if (i % 2 == 0) {
+                sum += i;
+                //sum = sum + i;
+            }
+        }
+        return sum;
+    }
 }
