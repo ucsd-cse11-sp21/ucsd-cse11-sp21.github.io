@@ -1,5 +1,3 @@
 Reading:
 
-Reading:
-
 None.
