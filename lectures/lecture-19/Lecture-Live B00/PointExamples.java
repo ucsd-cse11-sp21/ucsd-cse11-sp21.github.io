@@ -21,8 +21,38 @@ class Point {
   // the point in the array pts that is the *closest* (according to distance) to
   // this Point
 
+  //write a method allWithin that takes an array of Points pts and an integer
+  //dist and returns a NEW array of all points within dist of this poing
+  //from that array
+  Point[] allWithin(Point[] pts, int dist) {
+    int numberWithin = 0;
+    for (Point p: pts) {
+      if (this.distance(p) < dist) {
+        numbersWithin += 1;
+      }
+    }
+    Point[] toReturn = new Points[numberWithin];
+    int index = 0;
+    for (Point p: pts) {
+      if (this.distance(p) < dist) {
+        toReturn[...] = ...;  // arrray update expression
+      }
+    }
+  }
 }
 
 class PointExamples {
 
+  Point p1 = new Point(4, 5);
+  Point p2 = new Point(10, 10);
+  Point p3 = new Point(100, 100);
+  Point p4 = new Point(0, 0);
+
+  void testAllWithin(Tester t) {
+    Point[] allButP1 = { p2, p3, p4 };
+    Point[] allButP1P3 = { p2, p4 };
+    Point[] empty = { };
+    t.checkExpect(p1.allWithin(allButP1, 20), allButP1P3);
+    t.checkExpect(p1.allWithin(allButP1, 3), empty);
+  }
 }
