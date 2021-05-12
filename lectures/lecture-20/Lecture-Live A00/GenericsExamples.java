@@ -26,5 +26,29 @@ class GenericsExamples {
   TextTweet t3 = new TextTweet("ucsd", "#welcome to UCSD!");
   TextTweet t4 = new TextTweet("warrencollegeucsd", "You're going to love #ucsd new students!");
 
-  
+  int countNear0(Point[] pts) {
+    int count = 0;
+    for (Point pt: pts) {
+      if (pt.distance(new Point(0,0)) < 5) {
+        count += 1;
+      }
+    }
+    return count;
+  }
+
+  Point[] pts1 = { new Point(10, 10), new Point(1, 1), new Point(2, 3)};
+  int result1 = this.countNear0(pts1);
+
+  int countInQudrant1(Point[] pts) {
+    int count = 0;
+    for (Point pt: pts) {
+      if (pt.x > 0 && pt.y > 0) {
+        count += 1;
+      }
+    }
+    return count;
+  }
+
+  Point[] pts2 = { new Point(-1, 10), new Point(1, -1), new Point(2, 3)};
+  int result2 = this.countInQudrant1(pts2);  
 }

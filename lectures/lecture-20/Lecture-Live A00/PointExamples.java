@@ -1,5 +1,5 @@
 import tester.*;
-
+/*
 class Point {
   int x;
   int y;
@@ -28,13 +28,18 @@ class Point {
     int numbersWithin = 0;
     for (Point p: pts) {
       if (this.distance(p) < dist) {
-        numberWithin += 1;
+        numbersWithin += 1;
       }
     }
-    Point[] toReturn = new Point[numberWithin];
+    Point[] toReturn = new Point[numbersWithin];
+    int index = 0;
     for (Point p: pts) {
-      toReturn[...] = ...;  //array update expression
+      if (this.distance(p) < dist) {
+        toReturn[index] = p;  //array update expression
+        index += 1;
+      }
     }
+    return toReturn;
   }
 }
 
@@ -45,12 +50,15 @@ class PointExamples {
   Point p3 = new Point(100, 100);
   Point p4 = new Point(0, 0);
 
-  void testAllWithin(Tetser t) {
-    Point[] allButP1 = { p2, p3, p4 };
-    Point[] allButP1P3 = { p2, p4 };
-    Point[] empty = { };
+  Point[] allButP1 = { p2, p3, p4 };
+  Point[] allButP1P3 = { p2, p4 };
+  Point[] empty = { };
+
+  Point[] result1 = p1.allWithin(allButP1, 20);
+
+  void testAllWithin(Tester t) {
     t.checkExpect(p1.allWithin(allButP1, 20), allButP1P3);
     t.checkExpect(p1.allWithin(allButP1, 3), empty);
   }
-
 }
+*/
