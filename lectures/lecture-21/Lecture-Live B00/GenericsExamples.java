@@ -20,35 +20,76 @@ class TextTweet {
   }
 }
 
+interface Checker<T> {
+  boolean check(T t);
+}
+
+class CloseTo0 implements Checker<Point> {
+  public boolean check(Point pt) {
+    return pt.distance(new Point(0,0)) < 5;
+  }
+}
+
+class InQuad1 implements Checker<Point> {
+  public boolean check(Point pt) {
+    return pt.x > 0 && pt.y > 0;
+  }
+}
+
+class WelcomeTweet implements Checker<TextTweet> {
+  public boolean check(TextTweet tt) {
+    return tt.content.indexOf("#welcome") == 0;
+  }
+}
+
+class LongTweet implements Checker<TextTweet> {
+  public boolean check(TextTweet tt) {
+    return tt.content.length() > 20;
+  }
+}
+
+
 class GenericsExamples {
+
+  <T> int count(T[] ts, Checker<T> c) {
+    int count = 0;
+    for (T t: ts) {
+      if (c.check(t)) {
+        count += 1;
+      }
+    }
+    return count;
+  }
+
+  int countNear0(Point[] pts) {
+    return count(pts, new CloseTo0());
+  }
+
+  int countInQudrant1(Point[] pts) {
+    return count(pts, new InQuad1());
+  }
+
+  int countStartsWithWelcome(TextTweet[] tts) {
+    return count(tts, new WelcomeTweet());
+  }
+
+  int countLongTweets(TextTweet[] tts) {
+    return count(tts, new LongTweet());
+  }
+
   TextTweet t1 = new TextTweet("gregmiranda", "#welcome to CSE11, incoming students!");
   TextTweet t2 = new TextTweet("jacobsschool", "#welcome to #engineering at #ucsd ");
   TextTweet t3 = new TextTweet("ucsd", "#welcome to UCSD!");
   TextTweet t4 = new TextTweet("warrencollegeucsd", "You're going to love #ucsd new students!");
 
-  int countNear0(Point[] pts) {
-    int count = 0;
-    for (Point pt: pts) {
-      if (pt.distance(new Point(0,0)) < 5) {
-        count += 1;
-      }
-    }
-    return count;
-  }
+  TextTweet[] tts = { t1, t2, t3, t4 };
 
   Point[] pts1 = { new Point(10, 10), new Point(1, 1), new Point(2, 3)};
-  int result1 = this.countNear0(pts1);
-
-  int countInQudrant1(Point[] pts) {
-    int count = 0;
-    for (Point pt: pts) {
-      if (pt.x > 0 && pt.y > 0) {
-        count += 1;
-      }
-    }
-    return count;
-  }
-
   Point[] pts2 = { new Point(-1, 10), new Point(1, -1), new Point(2, 3)};
+
+  int startsWithWelcome = countStartsWithWelcome(tts);
+  int longTweets = countLongTweets(tts);
+
+  int result1 = this.countNear0(pts1);
   int result2 = this.countInQudrant1(pts2);  
 }
