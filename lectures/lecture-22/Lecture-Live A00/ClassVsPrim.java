@@ -1,4 +1,3 @@
-/*
 class Pair<TypeOfA, TypeOfB> {
     TypeOfA a;
     TypeOfB b;
@@ -7,7 +6,6 @@ class Pair<TypeOfA, TypeOfB> {
         this.b = b;
     }
 }
-*/
 
 class Point {
   int x;
@@ -19,5 +17,18 @@ class Point {
 }
 
 public class ClassVsPrim {
+
+  //Pair<int, int> p = new Pair<>(56, 5);
+  Pair<Integer, Boolean> p = new Pair<>(45, true);
+
+  //Integer i = new Integer(45);
+  //this means the same thing as above
+  Integer i = 45;
+
+  Integer i2 = i + 3;
+
+  int n = i2;
+
+  int n2 = i2.intValue();
 
 }

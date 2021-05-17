@@ -1,3 +1,4 @@
+/*
 class Pair<T1, T2> {
     T1 a;
     T2 b;
@@ -6,7 +7,7 @@ class Pair<T1, T2> {
         this.b = b;
     }
 }
-
+*/
 class SimpleGenerics {
 
     //Without angle brackets causes warnings!
