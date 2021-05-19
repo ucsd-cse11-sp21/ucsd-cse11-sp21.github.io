@@ -15,6 +15,10 @@ class ArrayListExamples {
         return toReturn;
     }
 
+    static ArrayList<String> longStrings(ArrayList<String> strs) {
+        return longStrings(strs, 5);
+    }
+
     public static void main(String[] args) {
         ArrayList<String> alist = new ArrayList<>();
         ArrayList<String> alist2 = alist;
@@ -32,5 +36,8 @@ class ArrayListExamples {
 
         ArrayList<String> longerThan6 = longStrings(alist, 6);
         System.out.println("Should not contain apple, banana: " + longerThan6);
+
+        ArrayList<String> longerThan5 = longStrings(alist);
+        System.out.println("Should not contain apple: " + longerThan5);
     }
 }
