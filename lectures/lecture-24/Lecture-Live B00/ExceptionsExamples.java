@@ -1,6 +1,35 @@
 import java.util.ArrayList;
 
+
+class TextTweet {
+    String username;
+    String contents;
+    int likes;
+    TextTweet(String username, String contents, int likes) {
+        // likes should not be negative
+        // contents should be fewer than 280 characters and at least 1
+        // username shouldn't bempty
+
+        if (likes < 0) {
+            throw new IllegalArgumentException("likes must be non-negative");
+        }
+        if (username.length() == 0) {
+            throw new IllegalArgumentException("username must contain characters");
+        }
+        if (contents.length() <= 0 || contents.length() > 280) {
+            throw new IllegalArgumentException("contents must be 1-280 characters");
+        }
+
+        this.username = username;
+        this.contents = contents;
+        this.likes = likes;
+    }
+}
+
+
+
 public class ExceptionsExamples {
+
 
     Exception e = new IllegalArgumentException("this exception isn't being thrown");
 
@@ -24,6 +53,12 @@ public class ExceptionsExamples {
     }
 
     public static void main(String[] args) {
+
+        TextTweet t = new TextTweet("", "hello!", 0);
+
+
+
+
         ArrayList<Integer> al = new ArrayList<>();
         al.add(-5);
         al.add(-10);
