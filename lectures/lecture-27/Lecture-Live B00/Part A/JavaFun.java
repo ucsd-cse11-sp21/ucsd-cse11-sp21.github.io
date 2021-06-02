@@ -20,6 +20,13 @@ class JavaFun {
     boolean cInAVarInstanceofC = aTypedVariableHoldingAC instanceof C;
     boolean cInstanceOfObject = c instanceof Object;
 
+    C canWeCopyCInAVarHere = (C) aTypedVariableHoldingAC;
+    C canWeCopyAHere = (C) a;
+
+
+
+
+
 
 
 
