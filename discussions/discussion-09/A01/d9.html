@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=None">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #49483e }
+body  { background: #272822; color: #f8f8f2 }
+body .c { color: #75715e } /* Comment */
+body .err { color: #960050; background-color: #1e0010 } /* Error */
+body .k { color: #66d9ef } /* Keyword */
+body .l { color: #ae81ff } /* Literal */
+body .n { color: #f8f8f2 } /* Name */
+body .o { color: #f92672 } /* Operator */
+body .p { color: #f8f8f2 } /* Punctuation */
+body .cm { color: #75715e } /* Comment.Multiline */
+body .cp { color: #75715e } /* Comment.Preproc */
+body .c1 { color: #75715e } /* Comment.Single */
+body .cs { color: #75715e } /* Comment.Special */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .kc { color: #66d9ef } /* Keyword.Constant */
+body .kd { color: #66d9ef } /* Keyword.Declaration */
+body .kn { color: #f92672 } /* Keyword.Namespace */
+body .kp { color: #66d9ef } /* Keyword.Pseudo */
+body .kr { color: #66d9ef } /* Keyword.Reserved */
+body .kt { color: #66d9ef } /* Keyword.Type */
+body .ld { color: #e6db74 } /* Literal.Date */
+body .m { color: #ae81ff } /* Literal.Number */
+body .s { color: #e6db74 } /* Literal.String */
+body .na { color: #a6e22e } /* Name.Attribute */
+body .nb { color: #f8f8f2 } /* Name.Builtin */
+body .nc { color: #a6e22e } /* Name.Class */
+body .no { color: #66d9ef } /* Name.Constant */
+body .nd { color: #a6e22e } /* Name.Decorator */
+body .ni { color: #f8f8f2 } /* Name.Entity */
+body .ne { color: #a6e22e } /* Name.Exception */
+body .nf { color: #a6e22e } /* Name.Function */
+body .nl { color: #f8f8f2 } /* Name.Label */
+body .nn { color: #f8f8f2 } /* Name.Namespace */
+body .nx { color: #a6e22e } /* Name.Other */
+body .py { color: #f8f8f2 } /* Name.Property */
+body .nt { color: #f92672 } /* Name.Tag */
+body .nv { color: #f8f8f2 } /* Name.Variable */
+body .ow { color: #f92672 } /* Operator.Word */
+body .w { color: #f8f8f2 } /* Text.Whitespace */
+body .mf { color: #ae81ff } /* Literal.Number.Float */
+body .mh { color: #ae81ff } /* Literal.Number.Hex */
+body .mi { color: #ae81ff } /* Literal.Number.Integer */
+body .mo { color: #ae81ff } /* Literal.Number.Oct */
+body .sb { color: #e6db74 } /* Literal.String.Backtick */
+body .sc { color: #e6db74 } /* Literal.String.Char */
+body .sd { color: #e6db74 } /* Literal.String.Doc */
+body .s2 { color: #e6db74 } /* Literal.String.Double */
+body .se { color: #ae81ff } /* Literal.String.Escape */
+body .sh { color: #e6db74 } /* Literal.String.Heredoc */
+body .si { color: #e6db74 } /* Literal.String.Interpol */
+body .sx { color: #e6db74 } /* Literal.String.Other */
+body .sr { color: #e6db74 } /* Literal.String.Regex */
+body .s1 { color: #e6db74 } /* Literal.String.Single */
+body .ss { color: #e6db74 } /* Literal.String.Symbol */
+body .bp { color: #f8f8f2 } /* Name.Builtin.Pseudo */
+body .vc { color: #f8f8f2 } /* Name.Variable.Class */
+body .vg { color: #f8f8f2 } /* Name.Variable.Global */
+body .vi { color: #f8f8f2 } /* Name.Variable.Instance */
+body .il { color: #ae81ff } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="background-color: #272822; padding: 0 5px 0 5px"> 1</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.io.*</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 2</span> <span style="color: #f92672">import</span> <span style="color: #f8f8f2">java.util.Arrays</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 3</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 4</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 5</span> <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">ExcepTest</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 6</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 7</span>    <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">[])</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 8</span>       <span style="color: #66d9ef">try</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px"> 9</span>          <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">[]</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #66d9ef">int</span><span style="color: #f92672">[</span><span style="color: #ae81ff">2</span><span style="color: #f92672">];</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">10</span>          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Access element three :&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">[</span><span style="color: #ae81ff">3</span><span style="color: #f92672">]);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">11</span>       <span style="color: #f92672">}</span> <span style="color: #66d9ef">catch</span> <span style="color: #f92672">(</span><span style="color: #f8f8f2">ArrayIndexOutOfBoundsException</span> <span style="color: #f8f8f2">e</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">12</span>          <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Exception thrown  :&quot;</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">e</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">13</span>       <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">14</span>       <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Out of the block&quot;</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">15</span>    
+<span style="background-color: #272822; padding: 0 5px 0 5px">16</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2147483648</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">17</span>    <span style="color: #75715e">// oneMoreThanMaxInt == -2147483648</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">18</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">oneMoreThanMaxInt</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">2147483647</span>  <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span> <span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">19</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">20</span> <span style="color: #75715e">// oneLessThanMinInt == 2147483647</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">21</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">oneLessThanMinInt</span> <span style="color: #f92672">=</span> <span style="color: #f92672">-</span><span style="color: #ae81ff">2147483648</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">22</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">23</span> <span style="color: #66d9ef">short</span> <span style="color: #f8f8f2">largestShort</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Short</span><span style="color: #f92672">.</span><span style="color: #a6e22e">MAX_VALUE</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">24</span> <span style="color: #f8f8f2">Float</span> <span style="color: #f8f8f2">smallestFloat</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Float</span><span style="color: #f92672">.</span><span style="color: #a6e22e">MIN_VALUE</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">25</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">26</span> <span style="color: #75715e">// ...</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">27</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">28</span> <span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">arrOne</span> <span style="color: #f92672">=</span> <span style="color: #f92672">{</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;b&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;c&quot;</span><span style="color: #f92672">};</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">29</span> <span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">arrTwo</span> <span style="color: #f92672">=</span> <span style="color: #f92672">{</span><span style="color: #e6db74">&quot;a&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;b&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;c&quot;</span><span style="color: #f92672">};</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">30</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">31</span> <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">equalsWithoutHelper</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">arrOne</span><span style="color: #f92672">.</span><span style="color: #a6e22e">equals</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">arrTwo</span><span style="color: #f92672">);</span> <span style="color: #75715e">// false</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">32</span> <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">equalsWithHelper</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Arrays</span><span style="color: #f92672">.</span><span style="color: #a6e22e">equals</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">arrOne</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">arrTwo</span><span style="color: #f92672">);</span> <span style="color: #75715e">// true</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">33</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">34</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">toStringWithoutHelper</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">arrOne</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toString</span><span style="color: #f92672">();</span> <span style="color: #75715e">// Something similar to: &quot;[Ljava.lang.String;@14acaea5&quot;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">35</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">toStringWithHelper</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">Arrays</span><span style="color: #f92672">.</span><span style="color: #a6e22e">toString</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">arrOne</span><span style="color: #f92672">);</span> <span style="color: #75715e">// &quot;[a, b, c]&quot;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">36</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">37</span> 
+<span style="background-color: #272822; padding: 0 5px 0 5px">38</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;hello&quot;</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">39</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">b</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;hhello&quot;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">substring</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">40</span> <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">c</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">==</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">;</span> <span style="color: #75715e">// ???</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">41</span> <span style="color: #75715e">//Instead, use equals method to check equality</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">42</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">a1</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;hello&quot;</span><span style="color: #f92672">;</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">43</span> <span style="color: #f8f8f2">String</span> <span style="color: #f8f8f2">b1</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&quot;hhello&quot;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">substring</span><span style="color: #f92672">(</span><span style="color: #ae81ff">1</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">44</span> <span style="color: #66d9ef">boolean</span> <span style="color: #f8f8f2">d</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a1</span><span style="color: #f92672">.</span><span style="color: #a6e22e">equals</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">b1</span><span style="color: #f92672">);</span> <span style="color: #75715e">// ???</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">45</span> <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">toStringWithoutHelper</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">46</span> <span style="color: #f8f8f2">System</span><span style="color: #f92672">.</span><span style="color: #a6e22e">out</span><span style="color: #f92672">.</span><span style="color: #a6e22e">println</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">toStringWithHelper</span><span style="color: #f92672">);</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">47</span> <span style="color: #f92672">}</span>
+<span style="background-color: #272822; padding: 0 5px 0 5px">48</span> <span style="color: #f92672">}</span>
+</pre></div>
+</body>
+</html>
